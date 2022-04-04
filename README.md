@@ -10,7 +10,11 @@ Bootstrap 5 template for practice 😉 or start a new project.
 <p>If you want to dig in deeper on animate.css,here is the <a href="https://animate.style/">Official Documentation</a></p>
 <h1>Very important! Infinite animations should be avoided<h1>
 
-## Masonry included
+## Libraries included
+* Bootstrap v5
+* Bootstrap icons
+* Masonry
+* Animate.css
 
 ## Contributing
 
@@ -20,6 +24,8 @@ Bootstrap 5 template for practice 😉 or start a new project.
 4. Push to the branch: `git push origin your-branch`
 5. Submit a PR
 
-## Licence
+## Creator
+* <a href="https://github.com/adhirsaurio">Yomerengues</a>
 
+## Licence
 Code released under [the MIT license](https://github.com/bulmatemplates/bulma-templates/blob/master/LICENSE).

@@ -1,3 +1,6 @@
+![Bootstrap v5](https://img.shields.io/badge/Bootstrap-V5-blue)
+![Responsive](https://img.shields.io/badge/Responsive-Yes-ff69b4)
+
 # cawfy-template
 Bootstrap 5 template for practice 😉 or start a new project.
 
@@ -27,5 +30,7 @@ Bootstrap 5 template for practice 😉 or start a new project.
 ## Creator
 * <a href="https://github.com/adhirsaurio">Yomerengues</a>
 
+## Maintenance
+![Maintenance](https://img.shields.io/badge/Maintenance-Yes-brightgreen)
 ## Licence
 Code released under [the MIT license](https://github.com/bulmatemplates/bulma-templates/blob/master/LICENSE).

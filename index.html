@@ -384,7 +384,7 @@
               <div class="accordion-item">
                 <h3 class="accordion-header">
                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-1" aria-expanded="false">
-                      <i class="bi bi-question-circle question-icon check"></i> Non consectetur a erat nam at lectus urna duis? 
+                      <i class="bi bi-question-circle question-icon check"></i>&nbsp;Non consectetur a erat nam at lectus urna duis? 
                     </button>
                 </h3>
                 <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist">
@@ -395,7 +395,7 @@
               <div class="accordion-item">
                 <h3 class="accordion-header">
                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-2" aria-expanded="false">
-                      <i class="bi bi-question-circle question-icon check"></i> Non consectetur a erat nam at lectus urna duis? 
+                      <i class="bi bi-question-circle question-icon check"></i>&nbsp; Non consectetur a erat nam at lectus urna duis? 
                     </button>
                 </h3>
                 <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist">
@@ -406,7 +406,7 @@
               <div class="accordion-item">
                 <h3 class="accordion-header">
                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-3" aria-expanded="false">
-                      <i class="bi bi-question-circle question-icon check"></i> Non consectetur a erat nam at lectus urna duis? 
+                      <i class="bi bi-question-circle question-icon check"></i>&nbsp; Non consectetur a erat nam at lectus urna duis? 
                     </button>
                 </h3>
                 <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist">
@@ -417,7 +417,7 @@
               <div class="accordion-item">
                 <h3 class="accordion-header">
                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-4" aria-expanded="false">
-                      <i class="bi bi-question-circle question-icon check"></i> Non consectetur a erat nam at lectus urna duis? 
+                      <i class="bi bi-question-circle question-icon check"></i>&nbsp; Non consectetur a erat nam at lectus urna duis? 
                     </button>
                 </h3>
                 <div id="faq-content-4" class="accordion-collapse collapse" data-bs-parent="#faqlist">
@@ -468,20 +468,26 @@
                   <form action="forms/contact.php" method="post" role="form" class="php-email-form">
                     <div class="row">
                       <div class="col-md-6 form-group">
+                          <label>Name</label>
                           <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required="">
                         </div>
                         <div class="col-md-6 form-group mt-3 mt-md-0"> 
+                          <label>Email</label>
                           <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required="">
                         </div>
                       </div>
                       <div class="form-group mt-3">
+                        <label>Subject</label>
                         <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required="">
                       </div>
                       <div class="form-group mt-3 mb-5">
+                        <label>Message</label>
                         <textarea class="form-control" name="message" placeholder="Message" required=""></textarea>
                       </div>
                       <div class="mb-5 text-center">
-                        <button type="submit" class="btn btn-primary">Send Message</button>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                          Send Message
+                        </button>
                       </div>
                   </form>
                </div>
@@ -502,6 +508,21 @@
         </ul>
         <p class="text-center text-muted">© 2021 <a href="https://github.com/adhirsaurio?tab=repositories" class="bi bi-github"></a> </p>
       </footer>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Message sent!</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            Your message has been sent!
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Your Scripts -->

@@ -45,7 +45,7 @@ h1, h2, h3, h4, h5{
   padding: 15px;
 }
 
-/* TAMAÑO TOGGLE */
+/* TOGGLE SIZE */
 .switch {
   position: absolute;
   display: inline-block;
@@ -61,7 +61,7 @@ h1, h2, h3, h4, h5{
   display:none;
 }
 
-/* CUANDO ES OFF */
+/* OFF */
 .slider {
   position: absolute;
   cursor: pointer;
@@ -73,7 +73,7 @@ h1, h2, h3, h4, h5{
   transition: .4s;
 }
 
-/* BOLITA TOGGLE */
+/* TOGGLE CIRCLE*/
 .slider:before {
   position: absolute;
   width: 26px;
@@ -85,17 +85,17 @@ h1, h2, h3, h4, h5{
   transition: .4s;
 }
 
-/* CUANDO ES ON */
+/* ON */
 input:checked + .slider {
   background-color: #edeb72;
 }
 
-/* MOVIMIENTO DEL TOGGLE */
+/* TOGGLE MOVEMENT */
 input:checked + .slider:before {
   transform: translateX(55px);
 }
 
-/*------ POSICIÓN Y FORMATO LETRAS ---------*/
+/*------ FONT POSITIONING ---------*/
 .on{
   display: none;
 }
@@ -128,7 +128,7 @@ input:checked + .slider .off{
   display: none;
 }
 
-/* BORDES REDONDEADOS */
+/* BORDERS */
 .slider.round {
 border-radius: 34px;
 }

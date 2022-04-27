@@ -1,7 +1,6 @@
 // Use this file to add JavaScript to your project
 
 //LIGHT/DARK THEME
-
 const toggleSwitch = document.querySelector('.switch input[type="checkbox"]');
 
 const currentTheme = localStorage.getItem("theme");

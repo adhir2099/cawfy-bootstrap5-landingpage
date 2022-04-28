@@ -236,6 +236,17 @@ border-radius: 50%;
     transition: all .5s;
 }
 
+/* Parallax */
+.parallax {
+  background-image: url('../img/2074130.jpg');
+  min-height: 450px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 15px;
+}
+
 /* Glow effect */
 .glow:hover{
     box-shadow: 0 0 5px #814e10, 0 0 25px #814e10, 0 0 50px #814e10, 0 0 200px #814e10;
@@ -255,7 +266,7 @@ border-radius: 50%;
   width: 16rem;
   height: 16rem;
   border-radius: 42% 56% 72% 28% / 42% 42% 56% 48%;
-  background: #814e10 url('assets/img/593cbb5359189869d8c5083ed6939b1f.jpg');
+  background: #814e10 url('../img/593cbb5359189869d8c5083ed6939b1f.jpg');
   background-size: cover;
   background-position: center;
   animation: morph 4.75s linear infinite;

@@ -18,14 +18,6 @@ body{
     color: var(--color);
 }
 
-p{
-  color: var(--color);
-}
-
-h1, h2, h3, h4, h5{
-  color: var(--color);
-}
-
 .align-toggle{
   position: relative;
 }
@@ -61,6 +53,11 @@ h1, h2, h3, h4, h5{
   display:none;
 }
 
+/* ON */
+input:checked + .slider {
+  background-color: #edeb72;
+}
+
 /* OFF */
 .slider {
   position: absolute;
@@ -83,11 +80,6 @@ h1, h2, h3, h4, h5{
   content: "";
   background-color: white;
   transition: .4s;
-}
-
-/* ON */
-input:checked + .slider {
-  background-color: #edeb72;
 }
 
 /* TOGGLE MOVEMENT */
@@ -146,6 +138,37 @@ border-radius: 50%;
     height:50%;
 }
 
+/* SOCIAL */
+.social{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+}
+
+.social-card{
+  width: 50px;
+  height: 50px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(221, 136, 17, 0.418);
+  border-radius: 10px;
+  box-shadow: 0 20px 20px rgb(0, 0, 0, 0.205);
+  margin:15px;
+  text-decoration: none;
+  font-size: 2em;
+  color:rgba(255, 255, 255, 0.336);
+  transition: box-shadow .4s, color .8s, transform .4s;
+}
+
+.social-card:hover{
+  color:#fff;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.205), inset 0 20px 10px rgba(0, 0, 0, 0.287), inset 10px 0 20px rgb(151, 131, 5), inset -20px 0 20px rgb(218, 151, 43), inset -30px 0 20px rgb(185, 119, 13);
+  transform: translateY(-10px);
+}
+
 /*Image on hover effect*/
 .imgOpacity {
     opacity: 1.0;
@@ -180,6 +203,30 @@ border-radius: 50%;
 	transform: scale(1.02);
 	transition: all ease .5ms;
 	box-shadow: 1px 2px 4px rgba(129, 78, 16, 65%);
+}
+
+/* BLOB */
+.blob{
+  overflow: hidden;
+  width: 16rem;
+  height: 16rem;
+  border-radius: 42% 56% 72% 28% / 42% 42% 56% 48%;
+  background: #814e10 url('assets/img/593cbb5359189869d8c5083ed6939b1f.jpg');
+  background-size: cover;
+  background-position: center;
+  animation: morph 4.75s linear infinite;
+}
+
+@keyframes morph{
+  0%, 100%{
+    border-radius: 42% 56% 72% 28% / 42% 42% 56% 48%;
+  }
+  33%{
+    border-radius: 72% 28% 48% 48% / 28% 28% 72% 72%;
+  }
+  66%{
+    border-radius: 100% 56% 56% 100% / 100% 100% 56% 56%;
+  }
 }
 
 /* Media queries */

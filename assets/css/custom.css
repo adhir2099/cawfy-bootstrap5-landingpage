@@ -169,6 +169,50 @@ border-radius: 50%;
   transform: translateY(-10px);
 }
 
+/* scrollUp */
+.scroll-top {
+	width: 50px;
+  height: 50px;
+  line-height: 20px;
+  position: relative;
+  bottom: 0;
+  right: 0;
+  left: 50%;
+  top: 0;
+  font-size: 2rem;
+  border-radius: 25px;
+  z-index: 99;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  background: #814e10;
+  transition: 1s ease;
+  border: none;
+  opacity: 1;
+}
+
+.scroll-top.open {
+	bottom: 30px;
+	opacity: 1;
+}
+
+.scroll-top::after {
+	position: absolute;
+	z-index: -1;
+	content: '';
+	top: 100%;
+	left: 5%;
+	height: 10px;
+	width: 90%;
+	opacity: 1;
+	background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0) 80%);
+}
+
+.scroll-top:hover {
+	background: #a3a3a3;
+}
+
+
 /*Image on hover effect*/
 .imgOpacity {
     opacity: 1.0;

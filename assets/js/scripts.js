@@ -24,3 +24,10 @@ function switchTheme(e){
 }
 
 toggleSwitch.addEventListener("change", switchTheme, false);
+
+/* Scroll Up */
+if (document.querySelector('.scroll-to-target')){
+    let toTop = document.querySelector('.scroll-to-target');
+    toTop.onclick = () => window.scrollTo({ top: 0, behavior: "smooth" });
+    window.onscroll = () => window.scrollY > 500 ? topBtn.style.opacity = 1 : topBtn.style.opacity = 0
+}

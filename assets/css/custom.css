@@ -253,9 +253,15 @@ border-radius: 50%;
 
 /* BLOB */
 .blob{
-  overflow: hidden;
   width: 16rem;
   height: 16rem;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  overflow: hidden;
   border-radius: 42% 56% 72% 28% / 42% 42% 56% 48%;
   background: #814e10 url('../img/593cbb5359189869d8c5083ed6939b1f.jpg');
   background-size: cover;
@@ -275,7 +281,7 @@ border-radius: 50%;
   }
 }
 
-/* AREAS */
+/*** AREAS ***/
 /* MENU */
 .menu-area {
   background: url(../img/menu-bg.jpg) center;

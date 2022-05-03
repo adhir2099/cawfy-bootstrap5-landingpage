@@ -1,12 +1,13 @@
 ![Bootstrap v5](https://img.shields.io/badge/Bootstrap-V5-blue)
 ![Responsive](https://img.shields.io/badge/Responsive-Yes-ff69b4)
 
-# cawfy-template
+# cawfy-landing-page
 Bootstrap 5 landing page for practice or start a new project with bootstrap 5 and css.
 
 ## Custom css
 <p>It has a <i>custom.css</i> file where you can add custom css to your project.</p>
 <p>We added some custom css.</p>
+<p>Flexbox theme.</p>
 
 ## Vanilla JS
 <p>It has a <i>script.js</i> file where you can add custom js to your project.</p>

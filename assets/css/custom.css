@@ -155,7 +155,7 @@ input:checked + .slider .off{
 }
 
 .social-card:hover{
-  color:#000;
+  color:rgb(243, 243, 243);
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.205), inset 0 20px 10px rgba(0, 0, 0, 0.287), inset 10px 0 20px rgb(219, 171, 11), inset -20px 0 20px rgb(218, 151, 43), inset -30px 0 20px rgb(185, 119, 13);
   transform: translateY(-10px);
 }
@@ -203,7 +203,6 @@ input:checked + .slider .off{
 	background: #a3a3a3;
 }
 
-
 /*Image on hover effect*/
 .imgOpacity {
     opacity: 1.0;
@@ -230,7 +229,7 @@ input:checked + .slider .off{
 
 .img-size{
   width:50%;
-  height:50%;
+  height:auto;
 }
 
 .check{
@@ -334,12 +333,54 @@ input:checked + .slider .off{
   }
 }
 
+/* Ribbon */
+#forkongithub a{
+  background:#000;
+  color:#fff;
+  text-decoration:none;
+  font-family:arial,sans-serif;
+  text-align:center;
+  font-weight:bold;
+  padding:5px 40px;
+  font-size:1rem;
+  line-height:2rem;
+  position:relative;
+  transition:0.5s;
+}
+
+#forkongithub a:hover{
+  background:#c11;
+  color:#fff;
+}
+
+#forkongithub a::before,#forkongithub a::after{
+  content:"";
+  width:100%;
+  display:block;
+  position:absolute;
+  top:1px;
+  left:0;
+  height:1px;
+  background:#fff;
+}
+
+#forkongithub a::after{
+  bottom:1px;
+  top:auto;
+}
+
 /*Custom bootstrap*/
 .border-bottom {
   border-bottom: 1px solid #814e10!important;
 }
 
 /* Media queries */
+@media (min-width:280px) and (max-width:799px){
+  #forkongithub{
+    display: none;
+  }
+}
+
 @media (min-width:360px) and (max-width:575px){
     .flex-xs-column{
         flex-direction: column !important;
@@ -356,4 +397,42 @@ input:checked + .slider .off{
     .justify-content-xs-around{
         justify-content:space-around!important;
     }
+
+    .toggle-container {
+      top: -37px;
+      left: 40px;
+    }
+}
+
+@media (min-width:768px) and (max-width:980px){
+  .toggle-container {
+    top: 46px;
+    left: -304px;
+  }
+}
+
+@media screen and (min-width:800px){
+  #forkongithub{
+      position:fixed;
+      display:block;
+      top:0;
+      right:0;
+      width:200px;
+      overflow:hidden;
+      height:200px;
+      z-index:9999;
+  }
+  
+  #forkongithub a{
+      width:200px;
+      position:absolute;
+      top:9px;
+      right:-54px;
+      transform:rotate(45deg);
+      -webkit-transform:rotate(45deg);
+      -ms-transform:rotate(45deg);
+      -moz-transform:rotate(45deg);
+      -o-transform:rotate(45deg);
+      box-shadow:4px 4px 10px rgba(0,0,0,0.8);
+  }
 }

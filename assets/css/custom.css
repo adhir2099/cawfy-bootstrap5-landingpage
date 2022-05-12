@@ -4,12 +4,12 @@ html:focus-within{
 }
 
 [data-theme="light"]{
-    --bg-color:#fff;
-    --color:#000;
+    --bg-color:#FFFEFD;
+    --color:#1B1C1E;
 }
 
 [data-theme="dark"]{
-    --bg-color:#333333;
+    --bg-color:#1B1C1E;
     --color:#ef8f2f;
 }
 
@@ -122,11 +122,11 @@ input:checked + .slider .off{
 
 /* BORDERS */
 .slider.round {
-border-radius: 34px;
+  border-radius: 34px;
 }
 
 .slider.round:before {
-border-radius: 50%;
+  border-radius: 50%;
 }
 
 /* SOCIAL */
@@ -223,8 +223,9 @@ border-radius: 50%;
 }
 
 .img-hero:hover {
-    transform: scale(1.1);
-    transition: all .5s;
+    transform: scale(1.02);
+    transition: all ease-out .5s;
+    box-shadow: 3px 6px 12px rgba(129, 78, 16, 65%);
 }
 
 .img-size{
@@ -259,7 +260,7 @@ border-radius: 50%;
   padding: 15px;
 }
 
-/*** ###AREAS### ***/
+/*****AREAS*****/
 
 /* MENU */
 .menu-area {
@@ -278,6 +279,7 @@ border-radius: 50%;
   padding: 30px 30px;
   margin-bottom: 30px;
 }
+
 /* FOOTER */
 .footer-area {
   color: #fff;
@@ -287,7 +289,7 @@ border-radius: 50%;
   background-size: cover;
 }
 
-/* ###EFFECTS###*/
+/***** EFFECTS *****/
 
 /* Glow effect */
 .glow:hover{

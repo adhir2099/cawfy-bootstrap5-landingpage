@@ -374,6 +374,13 @@ input:checked + .slider .off{
   border-bottom: 1px solid #814e10!important;
 }
 
+.btn-primary:hover{
+  transform: scale(1.08);
+  transition: all ease-out .5s;
+  color: #1B1C1E;
+  text-decoration: underline;
+}
+
 /* Media queries */
 @media (min-width:280px) and (max-width:799px){
   #forkongithub{

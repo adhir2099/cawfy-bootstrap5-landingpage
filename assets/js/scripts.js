@@ -31,3 +31,14 @@ if (document.querySelector('.scroll-to-target')){
     toTop.onclick = () => window.scrollTo({ top: 0, behavior: "smooth" });
     window.onscroll = () => window.scrollY > 500 ? topBtn.style.opacity = 1 : topBtn.style.opacity = 0
 }
+
+// Trigger toast
+const toastTrigger = document.getElementById('liveToastBtn')
+const toastLiveExample = document.getElementById('liveToast')
+if (toastTrigger) {
+  toastTrigger.addEventListener('click', () => {
+    const toast = new bootstrap.Toast(toastLiveExample)
+
+    toast.show()
+  })
+}

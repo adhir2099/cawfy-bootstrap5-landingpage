@@ -333,6 +333,29 @@ input:checked + .slider .off{
   }
 }
 
+.underline{
+  display: inline-block;
+  position: relative;
+}
+
+.underline:after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #814e10;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.underline:hover:after{
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
 /* Ribbon */
 #forkongithub a{
   background:#000;
@@ -379,6 +402,20 @@ input:checked + .slider .off{
   transition: all ease-out .5s;
   color: #1B1C1E;
   text-decoration: underline;
+}
+
+::-webkit-scrollbar{
+  width: 10px;
+}
+
+::-webkit-scrollbar-track{
+  background: #814e10;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb{
+  background: #edeb72;
+  border-radius: 50px;
 }
 
 /* Media queries */

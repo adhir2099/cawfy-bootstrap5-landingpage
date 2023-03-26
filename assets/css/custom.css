@@ -25,7 +25,7 @@ body{
 /* TOGGLE CONTAINER*/
 .toggle-container{
   position: absolute;
-  top: 0;
+  top: -40;
   bottom: 0;
   right: 0;
   left: 0;
@@ -443,14 +443,14 @@ input:checked + .slider .off{
     }
 
     .toggle-container {
-      top: -37px;
-      left: 40px;
+      top: -60px;
+      left: 55px;
     }
 }
 
 @media (min-width:768px) and (max-width:980px){
   .toggle-container {
-    top: 46px;
+    top: 12px;
     left: -304px;
   }
 }

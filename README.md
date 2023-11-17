@@ -41,8 +41,6 @@ Bootstrap 5 landing page for practice or start a new project with bootstrap 5 an
 
 ## Maintenance
 ![Maintenance](https://img.shields.io/badge/Maintenance-Yes-brightgreen)
-## Licence
-Code released under [the MIT license](https://github.com/bulmatemplates/bulma-templates/blob/master/LICENSE).
 
 <h3 align="left">Get in touch with me:</h3>
 <p align="left">

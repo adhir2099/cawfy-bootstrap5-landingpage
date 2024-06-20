@@ -6,8 +6,15 @@
 # Cawfy-landing-page
 Bootstrap 5 landing page for practice or start a new project with bootstrap 5 and css.
 
+## Demo URL
+<p align="left">
+  <a href="https://3moondev.com/demos/cawfy/">
+    <b>Visit demo here</b>
+  </a>
+</p>
+
 ## Custom css
-<p>It has a <i>custom.css</i> file where you can add custom css to your project.</p>
+<p>It has a <i>custom.css</i> file where you can add custom css to it for improvement and expansion. Feel free to explore additional features and functionalities to enhance your landing further</p>
 <p>We added some custom css.</p>
 <p>Flexbox theme.</p>
 
@@ -26,7 +33,7 @@ Bootstrap 5 landing page for practice or start a new project with bootstrap 5 an
     <img src="https://skillicons.dev/icons?i=js,jquery,bootstrap,css,html" />
   </a>
 </p>
-* Bootstrap v5.2.3
+* Bootstrap v5.3.3
 * Bootstrap icons
 * Masonry.js
 * Animate.css

@@ -334,6 +334,7 @@ input:checked + .slider .off{
   }
 }
 
+/* Underline */
 .underline{
   display: inline-block;
   position: relative;

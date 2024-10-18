@@ -138,16 +138,16 @@ input:checked + .slider .off{
 }
 
 .social-card{
-  width: 50px;
-  height: 50px;
+  width: 25%;
+  height: 50%;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   background: rgba(221, 136, 17, 0.418);
-  border-radius: 10px;
+  border-radius: 12px;
   box-shadow: 0 20px 20px rgb(0, 0, 0, 0.205);
-  margin:15px;
+  margin:8px;
   text-decoration: none;
   font-size: 2em;
   color:rgba(255, 255, 255, 0.336);
@@ -278,15 +278,6 @@ input:checked + .slider .off{
   border-radius: 10px;
   padding: 30px 30px;
   margin-bottom: 30px;
-}
-
-/* FOOTER */
-.footer-area {
-  color: #fff;
-  font-weight: bold;
-  padding-top: 220px;
-  background: url(../img/footer-bg.png) center;
-  background-size: cover;
 }
 
 /***** EFFECTS *****/
@@ -424,6 +415,11 @@ input:checked + .slider .off{
 @media (min-width:280px) and (max-width:799px){
   #forkongithub{
     display: none;
+  }
+
+  .social-card{
+    width: 25%;
+    height: 50%;
   }
 }
 

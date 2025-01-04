@@ -20,7 +20,37 @@
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <!-- Masonry JS-->
     <script src="assets/js/masonry.js"></script>
-    <!-- Coming soon EmailJs integration -->
+    <!-- EmailJs integration -->
+    <script type="text/javascript">
+        (function() {
+            emailjs.init({
+                publicKey: "yourPublicKeyHere",
+            });
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contactForm').addEventListener('submit', function(event) {
+                event.preventDefault();
+                const form = document.getElementById('contactForm');
+                emailjs.sendForm('ServiceID', 'templateID', this)
+                    .then(() => {
+                        Swal.fire({
+                            icon: 'success',
+                            title: 'Success',
+                            text: 'Message sent 🎉',
+                        });
+                        form.reset();
+                    }, (error) => {
+                        Swal.fire({
+                            icon: 'error',
+                            title: 'Error',
+                            text: 'Something went wrong 🥺, try again later.',
+                        });
+                    });
+            });
+        }
+    </script>
 </head>
 
 <body class="d-flex flex-column min-vh-100">
@@ -681,7 +711,7 @@
               </div>
             </div>
             <div class="col-lg-8">
-                <form action="" method="post" role="form" class="p-4 p-md-5">
+                <form action="#" method="post" role="form" class="p-4 p-md-5">
                   <div class="row">
                     <div class="col-md-6 form-group mt-3 form-floating mb-3">
                       <input type="text" class="form-control" id="floatingInput" placeholder="Name" required>
@@ -702,7 +732,7 @@
                       <label for="msg">Message</label>
                     </div>
                     <div class="mb-5 text-center">
-                      <button type="button" class="btn btn-primary" id="liveToastBtn">Send Message</button>
+                      <button type="submit" class="btn btn-primary" id="liveToastBtn">Send Message</button>
                     </div>
                 </form>
               </div>

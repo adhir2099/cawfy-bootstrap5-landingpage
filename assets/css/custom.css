@@ -22,6 +22,10 @@ body{
   position: relative;
 }
 
+.bg-dark {
+  background: linear-gradient(135deg, #1e1e2f, #2a2a40);
+}
+
 /* TOGGLE CONTAINER*/
 .toggle-container{
   position: absolute;
@@ -87,7 +91,6 @@ input:checked + .slider:before {
   transform: translateX(55px);
 }
 
-/*------ FONT POSITIONING ---------*/
 .on{
   display: none;
 }
@@ -120,7 +123,6 @@ input:checked + .slider .off{
   display: none;
 }
 
-/* BORDERS */
 .slider.round {
   border-radius: 34px;
 }
@@ -129,36 +131,7 @@ input:checked + .slider .off{
   border-radius: 50%;
 }
 
-/* SOCIAL */
-.social{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 10vh;
-}
-
-.social-card{
-  width: 25%;
-  height: 50%;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: rgba(221, 136, 17, 0.418);
-  border-radius: 12px;
-  box-shadow: 0 20px 20px rgb(0, 0, 0, 0.205);
-  margin:8px;
-  text-decoration: none;
-  font-size: 2em;
-  color:rgba(255, 255, 255, 0.336);
-  transition: box-shadow .4s, color .8s, transform .4s;
-}
-
-.social-card:hover{
-  color:rgb(243, 243, 243);
-  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.205), inset 0 20px 10px rgba(0, 0, 0, 0.287), inset 10px 0 20px rgb(219, 171, 11), inset -20px 0 20px rgb(218, 151, 43), inset -30px 0 20px rgb(185, 119, 13);
-  transform: translateY(-10px);
-}
+/* General Footer Styling */
 
 /* scrollUp */
 .scroll-top {
@@ -168,7 +141,7 @@ input:checked + .slider .off{
   position: relative;
   bottom: 0;
   right: 0;
-  left: 50%;
+  left: 48%;
   top: 0;
   font-size: 2rem;
   border-radius: 25px;
@@ -201,6 +174,33 @@ input:checked + .slider .off{
 
 .scroll-top:hover {
 	background: #a3a3a3;
+}
+
+/* Social Media Icons */
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-card {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.5em;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.social-card:hover{
+  color:rgb(243, 243, 243);
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.205), inset 0 20px 10px rgba(0, 0, 0, 0.287), inset 10px 0 20px rgb(219, 171, 11), inset -20px 0 20px rgb(218, 151, 43), inset -30px 0 20px rgb(185, 119, 13);
+  transform: translateY(-10px);
 }
 
 /*Image on hover effect*/

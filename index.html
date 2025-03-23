@@ -583,13 +583,9 @@
           </figure>
         </div>
       </div>
-      <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 0%; top: 1653px;">
+      <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 0%; top: 1228px;">
         <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
+          <img src="assets/img/1193335.jpg" class="img-fluid" alt="img">
         </div>
       </div>
     </div>
@@ -714,20 +710,19 @@
                 <form action="#" method="post" role="form" class="p-4 p-md-5">
                   <div class="row">
                     <div class="col-md-6 form-group mt-3 form-floating mb-3">
-                      <input type="text" class="form-control" id="floatingInput" placeholder="Name" required>
-                      <label for="floatingInput">Name</label>
+                      <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
+                      <label for="name">Name</label>
                     </div>
-                    
                     <div class="col-md-6 form-group mt-3 form-floating mb-3"> 
-                      <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
-                      <label for="email">Email</label>
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
+                        <label for="email">Email</label>
+                      </div>
                     </div>
-                  </div>
                     <div class="form-group mt-3 form-floating mb-3">
                       <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
                       <label for="subject">Subject</label>
                     </div>
-                    <div class="form-group mt-3 mb-5 form-floating mb-3">
+                    <div class="form-group mt-3 form-floating mb-5">
                       <textarea class="form-control" name="message" id="msg" placeholder="Message" required></textarea>
                       <label for="msg">Message</label>
                     </div>
@@ -740,45 +735,50 @@
         </div>
       </div>
   </section>
-    
-  <!-- FOOTER -->
-  <div class="container">
-    <footer class="py-3 my-4 mt-auto">
-      
-      <!-- SOCIAL MEDIA -->
-      <div class="social">
-        <a href="#" class="social-card"><i class="bi bi-whatsapp"></i></a>
-        <a href="#" class="social-card"><i class="bi bi-instagram"></i></a>
-        <a href="#" class="social-card"><i class="bi bi-tiktok"></i></a>
-        <a href="#" class="social-card"><i class="bi bi-telegram"></i></a>
-        <a href="#" class="social-card"><i class="bi bi-twitter"></i></a>
-        <a href="#" class="social-card"><i class="bi bi-youtube"></i></a>
-      </div>
-    
-      <p class="text-center text-muted"><img src="assets/img/cafe-1000.png" alt="cawfy" class="mx-lg-auto img-fluid">Cawfy bootstrap5 landing page © 2024 <a href="https://github.com/adhir2099?tab=repositories" class="bi bi-github"></a> </p>
-    
-      <!-- SCROLL-TOP -->
-      <button class="scroll-top scroll-to-target" data-target="html">
-          <i class="bi bi-caret-up"></i>
-      </button>
+  
+  <div class="container-fluid bg-dark text-white">
+      <footer class="py-5">
+          <div class="row">
+              <!-- Social Media Section -->
+              <div class="col-12 text-center mb-4">
+                  <h5 class="mb-3">Follow Us</h5>
+                  <div class="social">
+                      <a href="#" class="social-card"><i class="bi bi-whatsapp"></i></a>
+                      <a href="#" class="social-card"><i class="bi bi-instagram"></i></a>
+                      <a href="#" class="social-card"><i class="bi bi-tiktok"></i></a>
+                      <a href="#" class="social-card"><i class="bi bi-telegram"></i></a>
+                      <a href="#" class="social-card"><i class="bi bi-twitter"></i></a>
+                      <a href="#" class="social-card"><i class="bi bi-youtube"></i></a>
+                  </div>
+              </div>
 
-    </footer>
+              <!-- Logo and Copyright Section -->
+              <div class="col-12 text-center">
+                  <img src="assets/img/cafe-1000.png" alt="cawfy" class="mb-3" style="max-width: 100px;">
+                  <p class="mb-0">Cawfy Bootstrap 5 Landing Page © 2024 <a href="https://github.com/adhir2099?tab=repositories" class="text-white"><i class="bi bi-github"></i></a></p>
+
+                  <!-- Scroll to Top Button -->
+                  <button class="scroll-top scroll-to-target" data-target="html">
+                      <i class="bi bi-caret-up"></i>
+                  </button>
+              </div>
+
+          </div>
+      </footer>
   </div>
 
   <!-- TOAST -->
-  <section class="container marketing m-5 pb-5 mb-3 mx-auto text-center" id="about">
-    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+  <div class="toast-container position-fixed bottom-0 end-0 p-3">
       <div id="liveToast" class="toast text-bg-primary border-0" role="alert" aria-live="assertive" aria-atomic="true">
-        <div class="toast-header">
-          <strong class="me-auto">Success</strong>
-          <button type="button" class="btn-close-white" data-bs-dismiss="toast" aria-label="Close"></button>
-        </div>
-        <div class="toast-body">
-          Message successfully sent.
-        </div>
+          <div class="toast-header">
+              <strong class="me-auto">Success</strong>
+              <button type="button" class="btn-close-white" data-bs-dismiss="toast" aria-label="Close"></button>
+          </div>
+          <div class="toast-body">
+              Message successfully sent.
+          </div>
       </div>
-    </div>
-  </section>
+  </div>
 
   <!-- YOUR CUSTOM SCRIPTS -->
   <script src="assets/js/scripts.js"></script>

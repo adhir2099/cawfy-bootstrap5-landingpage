@@ -8,7 +8,7 @@ Bootstrap 5 landing page for practice or start a new project with bootstrap 5 an
 
 ## Demo URL
 <p align="left">
-  <a href="https://3moondev.com/demos/cawfy/">
+  <a href="https://adhir2099.github.io/cawfy-bootstrap5-landingpage/" target="_blank">
     <b>Visit demo here</b>
   </a>
 </p>

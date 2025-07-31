@@ -28,6 +28,10 @@ Bootstrap 5 landing page for practice or start a new project with bootstrap 5 an
 <p>If you want to dig in deeper on animate.css, here is the <a href="https://animate.style/"><b>Official Documentation</b></a></p>
 <h1><u>Very important! Infinite animations should be avoided</u><h1>
 
+## EmailJS integration
+<p>It has a <i>EmailJs</i> integration, just add your keys to start sending emails.</p>
+
+
 ## Libraries included
 <p align="left">
   <a href="https://skillicons.dev">
@@ -38,6 +42,7 @@ Bootstrap 5 landing page for practice or start a new project with bootstrap 5 an
 * Bootstrap icons
 * Masonry.js
 * Animate.css
+*EmailJs
 
 ## Contributing
 

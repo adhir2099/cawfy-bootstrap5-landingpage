@@ -23,7 +23,7 @@ body{
 }
 
 .bg-dark {
-  background: linear-gradient(135deg, #1e1e2f, #2a2a40);
+  background: linear-gradient(135deg, #ef8f2f, #efa051);
 }
 
 /* TOGGLE CONTAINER*/
@@ -130,8 +130,6 @@ input:checked + .slider .off{
 .slider.round:before {
   border-radius: 50%;
 }
-
-/* General Footer Styling */
 
 /* scrollUp */
 .scroll-top {

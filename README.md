@@ -29,7 +29,7 @@ Bootstrap 5 landing page for practice or start a new project with bootstrap 5 an
 <h1><u>Very important! Infinite animations should be avoided</u><h1>
 
 ## EmailJS integration
-<p>It has a <i>EmailJs</i> integration, just add your keys to start sending emails.</p>
+<p>It has an <i>EmailJs</i> integration, just add your keys to start sending emails.</p>
 
 
 ## Libraries included
